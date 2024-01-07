@@ -12,9 +12,9 @@ const Footer = () => {
             style={{
                 padding: '16px',
                 textAlign: 'center',
-                position: 'fixed',
-                left: 0,
-                bottom: 0,
+                // position: 'fixed',
+                // left: 0,
+                // bottom: 0,
                 width: '100%',
             }}
         >

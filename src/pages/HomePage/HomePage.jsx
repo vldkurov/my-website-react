@@ -2,13 +2,38 @@ import Typography from "@mui/material/Typography";
 import {Grid} from "@mui/material";
 import Paper from "@mui/material/Paper";
 import Box from "@mui/material/Box";
-import cardPath from '../../static/images/cards/IMG_9347.jpeg'
+import {
+    FaAws,
+    FaChrome,
+    FaCss3Alt,
+    FaDatabase,
+    FaFigma,
+    FaGit,
+    FaGithub,
+    FaHtml5,
+    FaJs,
+    FaNodeJs,
+    FaNpm,
+    FaPython,
+    FaReact,
+    FaTerminal
+} from 'react-icons/fa';
+
 import MediaCard from "../../components/MediaCard/MediaCard";
 import TimeContainer from "../../utils/timer";
+import BasicList from "../../components/BasicList/BasicList";
+
+import cardPath from '../../static/images/cards/IMG_9347.jpeg'
+
+const projectsList = [
+    {
+        href: 'https://jammming-orcin.vercel.app',
+        title: 'Jammming',
+        description: 'Website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.'
+    }
+]
 
 function HomePage() {
-
-    // const cardPath = '../../../static/images/cards/IMG_9347.jpeg'
 
     return (
         <>
@@ -17,7 +42,6 @@ function HomePage() {
             {/*<Typography variant="h4">Projects</Typography>*/}
             {/*<Typography variant="h4">Skills</Typography>*/}
             <Grid container spacing={2}>
-                {/* Section 1 */}
                 <Grid item xs={12}>
                     <Paper elevation={3} style={{padding: '20px'}}>
                         <Box sx={{display: {md: 'flex'}}}>
@@ -50,8 +74,6 @@ function HomePage() {
                                     Fun fact!
                                     I've been programing for
                                     <Box
-                                        // paddingLeft={1}
-                                        //  paddingRight={1}
                                         component='span'
                                         style={{fontWeight: 'bold'}}>
                                         {<TimeContainer/>}
@@ -65,27 +87,37 @@ function HomePage() {
                     </Paper>
                 </Grid>
 
-                {/* Section 2 */}
                 <Grid item xs={12}>
                     <Paper elevation={3} style={{padding: '20px'}}>
                         <Typography variant="h4" gutterBottom>
                             Projects
                         </Typography>
-                        <Typography>
-                            Content for section 2 goes here.
-                        </Typography>
+                        <BasicList projectsList={projectsList}/>
                     </Paper>
                 </Grid>
 
-                {/* Section 3 */}
                 <Grid item xs={12}>
                     <Paper elevation={3} style={{padding: '20px'}}>
                         <Typography variant="h4" gutterBottom>
                             Skills
                         </Typography>
-                        <Typography>
-                            Content for section 3 goes here.
-                        </Typography>
+
+                        <Box sx={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', width: '100%'}}>
+                            <FaHtml5 color="orange" size={30}/>
+                            <FaCss3Alt color='blue' size={30}/>
+                            <FaJs color="red" size={30}/>
+                            <FaReact color="blue" size={30}/>
+                            <FaAws color="orange" size={30}/>
+                            <FaFigma color='purple' size={30}/>
+                            <FaGit color="black" size={30}/>
+                            <FaChrome color="blue" size={30}/>
+                            <FaTerminal color="black" size={30}/>
+                            <FaNpm color="red" size={30}/>
+                            <FaNodeJs color="green" size={30}/>
+                            <FaGithub color="black" size={30}/>
+                            <FaPython color="gold" size={30}/>
+                            <FaDatabase color="blue" size={30}/>
+                        </Box>
                     </Paper>
                 </Grid>
             </Grid>
