@@ -43,82 +43,95 @@ function HomePage() {
             {/*<Typography variant="h4">Skills</Typography>*/}
             <Grid container spacing={2}>
                 <Grid item xs={12}>
-                    <Paper elevation={3} style={{padding: '20px'}}>
-                        <Box sx={{display: {md: 'flex'}}}>
-                            <Box sx={{flex: {lg: 3, md: 1}, paddingRight: 2}}>
-                                <Typography variant="h4" gutterBottom>
-                                    About me
-                                </Typography>
-                                <Typography paragraph={true} sx={{fontSize: '1.2rem'}}>
-                                    Self-motivated Full Stack Web Developer, consistently raise the bar on creativity,
-                                    seek
-                                    experience in varied platform development frameworks. Strong understanding of
-                                    programming
-                                    and
-                                    full-stack engineering principles. Interpret instruction well and work
-                                    collaboratively
-                                    to
-                                    support
-                                    team objectives. Focused on problem-solving and troubleshooting to identify targeted
-                                    solutions.
-                                    Proactive, methodical and quick to learn for reliable team support.
-                                </Typography>
-                                <Typography paragraph={true} sx={{fontSize: '1.2rem'}}>
-                                    In my free time I like to read about scientific developments,
-                                    mathematics, and computational mathematics. I also like to take my
-                                    chances of winning big.
-                                </Typography>
-                                <Typography
-                                    style={{display: 'flex', flexDirection: 'column'}}
-                                    paragraph={true} sx={{fontSize: '1.2rem'}}>
-                                    Fun fact!
-                                    I've been programing for
-                                    <Box
-                                        component='span'
-                                        style={{fontWeight: 'bold'}}>
-                                        {<TimeContainer/>}
-                                    </Box> seconds!
-                                </Typography>
+                    <Box id='about'>
+                        <Paper elevation={3} style={{padding: '20px'}}>
+                            <Box sx={{display: {md: 'flex'}}}>
+                                <Box sx={{flex: {lg: 3, md: 1}, paddingRight: 2}}>
+                                    <Typography variant="h4" gutterBottom>
+                                        About me
+                                    </Typography>
+                                    <Typography paragraph={true} sx={{fontSize: '1.2rem'}}>
+                                        Self-motivated Full Stack Web Developer, consistently raise the bar on
+                                        creativity,
+                                        seek
+                                        experience in varied platform development frameworks. Strong understanding of
+                                        programming
+                                        and
+                                        full-stack engineering principles. Interpret instruction well and work
+                                        collaboratively
+                                        to
+                                        support
+                                        team objectives. Focused on problem-solving and troubleshooting to identify
+                                        targeted
+                                        solutions.
+                                        Proactive, methodical and quick to learn for reliable team support.
+                                    </Typography>
+                                    <Typography paragraph={true} sx={{fontSize: '1.2rem'}}>
+                                        In my free time I like to read about scientific developments,
+                                        mathematics, and computational mathematics. I also like to take my
+                                        chances of winning big.
+                                    </Typography>
+                                    <Typography
+                                        style={{display: 'flex', flexDirection: 'column'}}
+                                        paragraph={true} sx={{fontSize: '1.2rem'}}>
+                                        Fun fact!
+                                        I've been programing for
+                                        <Box
+                                            component='span'
+                                            style={{fontWeight: 'bold'}}>
+                                            {<TimeContainer/>}
+                                        </Box> seconds!
+                                    </Typography>
+                                </Box>
+                                <Box sx={{flex: {lg: 1, md: 1}}}>
+                                    <MediaCard path={cardPath}/>
+                                </Box>
                             </Box>
-                            <Box sx={{flex: {lg: 1, md: 1}}}>
-                                <MediaCard path={cardPath}/>
-                            </Box>
-                        </Box>
-                    </Paper>
+                        </Paper>
+                    </Box>
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Paper elevation={3} style={{padding: '20px'}}>
-                        <Typography variant="h4" gutterBottom>
-                            Projects
-                        </Typography>
-                        <BasicList projectsList={projectsList}/>
-                    </Paper>
+                    <Box id='projects'>
+                        <Paper elevation={3} style={{padding: '20px'}}>
+                            <Typography variant="h4" gutterBottom>
+                                Projects
+                            </Typography>
+                            <BasicList projectsList={projectsList}/>
+                        </Paper>
+                    </Box>
                 </Grid>
 
                 <Grid item xs={12}>
-                    <Paper elevation={3} style={{padding: '20px'}}>
-                        <Typography variant="h4" gutterBottom>
-                            Skills
-                        </Typography>
+                    <Box id='skills'>
+                        <Paper elevation={3} style={{padding: '20px'}}>
+                            <Typography variant="h4" gutterBottom>
+                                Skills
+                            </Typography>
 
-                        <Box sx={{display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', width: '100%'}}>
-                            <FaHtml5 color="orange" size={30}/>
-                            <FaCss3Alt color='blue' size={30}/>
-                            <FaJs color="red" size={30}/>
-                            <FaReact color="blue" size={30}/>
-                            <FaAws color="orange" size={30}/>
-                            <FaFigma color='purple' size={30}/>
-                            <FaGit color="black" size={30}/>
-                            <FaChrome color="blue" size={30}/>
-                            <FaTerminal color="black" size={30}/>
-                            <FaNpm color="red" size={30}/>
-                            <FaNodeJs color="green" size={30}/>
-                            <FaGithub color="black" size={30}/>
-                            <FaPython color="gold" size={30}/>
-                            <FaDatabase color="blue" size={30}/>
-                        </Box>
-                    </Paper>
+                            <Box sx={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                flexWrap: 'wrap',
+                                width: '100%'
+                            }}>
+                                <FaHtml5 color="orange" size={30}/>
+                                <FaCss3Alt color='blue' size={30}/>
+                                <FaJs color="red" size={30}/>
+                                <FaReact color="blue" size={30}/>
+                                <FaAws color="orange" size={30}/>
+                                <FaFigma color='purple' size={30}/>
+                                <FaGit color="black" size={30}/>
+                                <FaChrome color="blue" size={30}/>
+                                <FaTerminal color="black" size={30}/>
+                                <FaNpm color="red" size={30}/>
+                                <FaNodeJs color="green" size={30}/>
+                                <FaGithub color="black" size={30}/>
+                                <FaPython color="gold" size={30}/>
+                                <FaDatabase color="blue" size={30}/>
+                            </Box>
+                        </Paper>
+                    </Box>
                 </Grid>
             </Grid>
             {/*</Container>*/}
