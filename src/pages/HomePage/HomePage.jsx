@@ -30,6 +30,11 @@ const projectsList = [
         href: 'https://jammming-orcin.vercel.app',
         title: 'Jammming',
         description: 'Website that allows users to search the Spotify library, create a custom playlist, then save it to their Spotify account.'
+    },
+    {
+        href: 'https://rainbow-florentine-05ce8e.netlify.app',
+        title: 'RedditMinimal',
+        description: 'Website where people share links to articles, media and other things on the web.'
     }
 ]
 
