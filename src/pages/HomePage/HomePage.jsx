@@ -35,6 +35,11 @@ const projectsList = [
         href: 'https://rainbow-florentine-05ce8e.netlify.app',
         title: 'RedditMinimal',
         description: 'Website where people share links to articles, media and other things on the web.'
+    },
+    {
+        href: 'https://the-e-commerce-api.onrender.com/api-docs/',
+        title: 'The e-commerce API (Back-End)',
+        description: 'An advanced e-commerce API project that provides a robust platform for inventory management and user authentication, designed to offer a scalable and efficient online shopping experience.'
     }
 ]
 
