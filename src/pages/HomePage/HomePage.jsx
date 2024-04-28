@@ -36,10 +36,15 @@ const projectsList = [
         title: 'RedditMinimal',
         description: 'Website where people share links to articles, media and other things on the web.'
     },
+    // {
+    //     href: 'https://the-e-commerce-api.onrender.com/api-docs/',
+    //     title: 'The e-commerce API (Back-End)',
+    //     description: 'An advanced e-commerce API project that provides a robust platform for inventory management and user authentication, designed to offer a scalable and efficient online shopping experience.'
+    // },
     {
-        href: 'https://the-e-commerce-api.onrender.com/api-docs/',
-        title: 'The e-commerce API (Back-End)',
-        description: 'An advanced e-commerce API project that provides a robust platform for inventory management and user authentication, designed to offer a scalable and efficient online shopping experience.'
+        href: 'https://main--thunderous-moxie-f4ffbe.netlify.app/',
+        title: 'The e-commerce app',
+        description: 'The e-commerce app offers a seamless online shopping experience, enabling users to browse and purchase a wide range of products, tailored by categories, with robust features designed to enhance user satisfaction and streamline the buying process.'
     }
 ]
 
