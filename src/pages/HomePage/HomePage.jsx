@@ -43,7 +43,7 @@ const projectsList = [
     // },
     {
         href: 'https://main--thunderous-moxie-f4ffbe.netlify.app/',
-        title: 'The e-commerce app',
+        title: 'E-commerce app',
         description: 'E-commerce app offers a seamless online shopping experience, enabling users to browse and purchase a wide range of products, tailored by categories, with robust features designed to enhance user satisfaction and streamline the buying process.'
     }
 ]
