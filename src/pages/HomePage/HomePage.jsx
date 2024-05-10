@@ -36,15 +36,15 @@ const projectsList = [
         title: 'RedditMinimal',
         description: 'Website where people share links to articles, media and other things on the web.'
     },
-    // {
-    //     href: 'https://the-e-commerce-api.onrender.com/api-docs/',
-    //     title: 'The e-commerce API (Back-End)',
-    //     description: 'An advanced e-commerce API project that provides a robust platform for inventory management and user authentication, designed to offer a scalable and efficient online shopping experience.'
-    // },
     {
         href: 'https://main--thunderous-moxie-f4ffbe.netlify.app/',
         title: 'E-commerce app',
         description: 'E-commerce app offers a seamless online shopping experience, enabling users to browse and purchase a wide range of products, tailored by categories, with robust features designed to enhance user satisfaction and streamline the buying process.'
+    },
+    {
+        href: 'https://enchanting-dango-e9c386.netlify.app/',
+        title: 'Task Manager',
+        description: 'Task Manager App is a streamlined and user-friendly platform designed to help individuals effectively organize, track, and manage their tasks with customized priority settings and status updates.'
     }
 ]
 
@@ -52,10 +52,6 @@ function HomePage() {
 
     return (
         <>
-            {/*<Container>*/}
-            {/*<Typography variant="h4">About me</Typography>*/}
-            {/*<Typography variant="h4">Projects</Typography>*/}
-            {/*<Typography variant="h4">Skills</Typography>*/}
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <Box id='about'>
